@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>World Countries Data</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js" integrity="sha512-+UYTD5L/bU1sgAfWA0ELK5RlQ811q8wZIocqI7+K0Lhh8yVdIoAMEs96wJAIbgFvzynPm36ZCXtkydxu1cs27w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+        <body>
+            <header id="countries">
+                <h2>World Countries Data</h2>
+                <p class="subtitle"></p>
+                <p class="feedback"></p>
+            </header>
+            <main>
+                <div class="wrapper">
+                    <div class="graph-buttons">
+                        <button id="population">Population</button>
+                        <button id="languages">Languages</button>
+                        <h4 class="graph-title"></h4>
+                    </div>
+                    <div class="graphs">
+                        <canvas id="myGraph" ></canvas>       
+                    </div>
+                </div>
+            </main>
+            <script src="./JS/countries.js"></script>
+            <script src="./JS/main.js"></script>
+        </body>
+</html>
